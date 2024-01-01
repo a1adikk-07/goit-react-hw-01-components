@@ -5,8 +5,8 @@ import transactions from '../components/data/transactions.json';
 
 import { Profile } from '../components/profile/profile';
 import { Statistics } from '../components/statistic/statistics';
-import { friendList } from '../components/friendsList/friendList';
-import { transactionHistory } from '../components/transactionHistory/transactionHistory';
+import { FriendList } from '../components/friendsList/friendList';
+import { TransactionHistory } from '../components/transactionHistory/transactionHistory';
 
 export const App = () => {
   return (
@@ -20,7 +20,10 @@ export const App = () => {
       />
       <div style={{ marginTop: '15px' }}></div>
       <Statistics title="Upload stats" stats={data} />
-      <Statistics stats={data} />
+      <div style={{ marginTop: '15px' }}></div>
+      <FriendList friends={friends} />
+      <div style={{ marginTop: '15px' }}></div>
+      <TransactionHistory transactions={transactions} />
     </div>
   );
 };

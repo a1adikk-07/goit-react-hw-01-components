@@ -10,9 +10,13 @@ export const StatisticBox = styled.li`
 `;
 
 export const StatisticText = styled.span`
-  font-size: 16px;
+  margin-bottom: 10px;
+  color: gray;
+  font-size: 21px;
+  font-weight: 400;
 `;
 
 export const StatisticCounter = styled.span`
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 600;
 `;

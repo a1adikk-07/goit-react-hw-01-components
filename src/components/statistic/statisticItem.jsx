@@ -8,7 +8,7 @@ export const StatisticItem = ({ label, percentage }) => {
   return (
     <StatisticBox>
       <StatisticText>{label}</StatisticText>
-      <StatisticCounter>{percentage}</StatisticCounter>
+      <StatisticCounter>{percentage}%</StatisticCounter>
     </StatisticBox>
   );
 };

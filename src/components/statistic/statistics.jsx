@@ -11,7 +11,7 @@ export const Statistics = ({ title, stats }) => {
     <Statisticsection className="">
       {title && <StatisticTitle>{title}</StatisticTitle>}
       <StatisticList>
-        {statusbar.map(({ id, label, percentage }) => (
+        {stats.map(({ id, label, percentage }) => (
           <StatisticItem key={id} label={label} percentage={percentage} />
         ))}
       </StatisticList>
