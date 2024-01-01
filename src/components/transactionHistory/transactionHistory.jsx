@@ -7,7 +7,7 @@ import {
   Tr,
 } from '../transactionHistory/transactionHistory.styled';
 
-export const TransactionHistory = ({ items }) => {
+export const TransactionHistory = ({ transactions }) => {
   return (
     <BaseTable className="transaction-history">
       <Thead>
@@ -17,7 +17,7 @@ export const TransactionHistory = ({ items }) => {
       </Thead>
 
       <Tbody>
-        {items.map(({ id, type, amount, currency }) => (
+        {transactions.map(({ id, type, amount, currency }) => (
           <Tr key={id}>
             <Td>{type}</Td>
             <Td>{amount}</Td>
